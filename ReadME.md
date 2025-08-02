@@ -3,7 +3,7 @@
 ## Model Performance video
 
 
-![Lunar Lander Demo](./Demo_1.mp4)
+![Space craft Demo](./Demo_1.mp4)
 
 ## Overview
 This project explores different deep reinforcement learning architectures for solving the Lunar Lander problem. The primary focus is on comparing:
