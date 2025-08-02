@@ -1,9 +1,9 @@
-# GNN and PPO-based Lunar Landing
+# Space Craft Landing with PPO and GNN
 
 ## Model Performance video
 
 
-![Lunar Lander Demo](./Lunar_Landing_Using_GNN_Policy.gif)
+![Lunar Lander Demo](./Demo_1.mp4)
 
 ## Overview
 This project explores different deep reinforcement learning architectures for solving the Lunar Lander problem. The primary focus is on comparing:
@@ -28,10 +28,6 @@ PPO is a policy gradient method that improves sample efficiency while maintainin
 ## Results & Observations
 
 ### Training Performance
-Two main graphs illustrate the training progress of the models:
-
-- **PPO with MLP:** The reward curve exhibits a gradual upward trend but with noticeable fluctuations and occasional instability. This reflects the MLP’s limited capacity to capture complex feature dependencies in the Lunar Lander state.
-
 - **GNN with PPO:** The GNN-based policy converges more smoothly, with mean rewards stabilizing closer to the environment’s target score (200). The success-rate plot shows that the GNN approach achieves successful landings more consistently than the MLP-based agent, indicating better robustness and generalization.
 
 ### Key Findings
