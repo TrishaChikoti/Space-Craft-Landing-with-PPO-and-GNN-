@@ -6,34 +6,23 @@
 ![Space craft Demo](./Space_Craft_Landing_Using_GNN_Policy.gif)
 
 ## Overview
-This project explores different deep reinforcement learning architectures for solving the Lunar Lander problem. The primary focus is on comparing:
-
-- **MLP Policy with PPO**
-- **GNN POlicy with PPO**
-- **Transformer with PPO**
-
-The objective is to evaluate how different model architectures affect training performance and the ability to land the spacecraft successfully.
+This project investigates using **Graph Neural Network (GNN) architectures** combined with **Proximal Policy Optimization (PPO)** to solve the Lunar Lander problem. The goal is to assess how GNN policies affect training performance and the spacecraft's landing success rate.
 
 ## Methodology
 
 ### Proximal Policy Optimization (PPO)
-PPO is a policy gradient method that improves sample efficiency while maintaining stable updates. It has been widely used in reinforcement learning problems, including control tasks like Lunar Lander.
+PPO is a popular policy gradient reinforcement learning algorithm known for stable and efficient learning. It is well-suited for control tasks such as Lunar Lander.
 
-### Architectures Tested
-
-1. **MLP with PPO**: A standard multi-layer perceptron (MLP) was used as the policy network for PPO. This is a baseline approach commonly used in reinforcement learning.
-2. **GNN with PPO**: A Graph Neural Network (GNN) was integrated with PPO to capture spatial and structural relationships in the environment.
-3. **Transformer with PPO**: A transformer-based policy was tested, but it did not yield satisfactory results.
+### GNN Architecture with PPO
+A **Graph Neural Network** was integrated as the policy network for PPO. GNNs are designed to capture spatial and structural relationships in the environment, potentially improving the learning and generalization abilities of the RL agent.
 
 ## Results & Observations
 
-### Training Performance
-- **GNN with PPO:** The GNN-based policy converges more smoothly, with mean rewards stabilizing closer to the environment’s target score (200). The success-rate plot shows that the GNN approach achieves successful landings more consistently than the MLP-based agent, indicating better robustness and generalization.
-
-### Key Findings
-- The **GNN-based PPO** outperforms the **MLP-based PPO** in terms of stability and success rate.
-- The **Transformer-based PPO** struggled and did not show promising results.
-- The **GNN approach led to higher mean rewards and a better success rate**, making it the preferred architecture for the task.
+- **Training Stability:** The GNN-based PPO policy demonstrated smooth convergence during training, with mean rewards reaching and stabilizing near the environment’s target score (200).
+- **Consistent Success Rate:** The **GNN policy** consistently achieved successful landings more frequently than alternative architectures, highlighting its robustness and generalization capacity.
+- **Higher Rewards & Robustness:** Utilizing a GNN with PPO resulted in higher mean rewards and better landing success rates on average, indicating that this approach is well-suited for the problem.
 
 ## Conclusion
-Using GNNs with PPO provides a more robust approach to solving the Lunar Lander problem compared to MLP-based PPO. Future work could explore hyperparameter tuning and modifications to the transformer-based approach to improve its performance.
+
+Combining **GNNs with PPO** provides a robust and effective approach to solving the Lunar Lander problem, outperforming other architectures tested. Future work may explore further GNN enhancements or advanced exploration strategies to push the limits of reinforcement learning performance in this domain.
+
